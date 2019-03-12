@@ -17,7 +17,7 @@ public class InsertSort implements Sort {
 		for(out = 1; out < length; out++) {			
 			int temp = data[out];			
 			in = out;			
-			while(in > 0 && data[in - 1] >= temp) {
+			while(in > 0 && data[in - 1] > temp) {
 				data[in] = data[in - 1];
 				--in;
 			}			
